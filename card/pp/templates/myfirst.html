@@ -1,0 +1,23 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'my.css' %}">
+<body>
+
+<div class="card">
+    <div class="card-front" id="cardFront">
+      <h1>🎉 Surprise Awaits! 🎉</h1>
+      <button onclick="openCard()">Open Card</button>
+    </div>
+    <div class="card-inside" id="cardInside">
+      <h2>❤️GOOD DAY ❤️</h2>
+      <p>"Here's to a day full of laughter and feeling great in every possible way."💖</p>
+      <p>– From My DEAR Friend ❤️</p>
+      <button onclick="throwConfetti()"><h1>🎉 Enjoy 🎉</h1><h6>click</h6></button>
+    </div>
+  </div>
+  
+  <script src="{% static 'my.js' %}"></script>
+</body>
+</html>      
