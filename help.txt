@@ -1,0 +1,2 @@
+project name = card
+app name = pp
