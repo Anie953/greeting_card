@@ -1,9 +1,8 @@
 from django.http import HttpResponse
 from django.template import loader
+from django.shortcuts import render
 
-def testing(request):
+def myfirst(request):
   template = loader.get_template('myfirst.html')
-  context = {
-    'fruits': ['Apple', 'Banana', 'Cherry'],   
-  }
-  return HttpResponse(template.render(context, request))   
+ 
+  return HttpResponse(template.render({}, request))   
